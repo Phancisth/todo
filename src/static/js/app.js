@@ -2,7 +2,7 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-            <H1>Todo App</H1>
+            <ShowTitle />
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
@@ -176,6 +176,10 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
             </Row>
         </Container>
     );
+}
+
+function ShowTitle() {
+    return <h3>Todo App</h3>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
