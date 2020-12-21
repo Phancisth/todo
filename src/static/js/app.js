@@ -2,9 +2,10 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
-            <ShowTitle />
+            
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <ShowTitle />
                     <TodoListCard />
                 </Col>
             </Row>
